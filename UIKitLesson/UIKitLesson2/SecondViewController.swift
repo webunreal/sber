@@ -9,8 +9,14 @@ import UIKit
 
 final class SecondViewController: UIViewController {
     
-    lazy var bagel: CircleView = {
-        let view = CircleView(diameter: self.view.frame.height / 2.5)
+    private lazy var responderButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.addTarget(self, action: #selector(responderButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var bagel: BagelView = {
+        let view = BagelView(diameter: self.view.frame.height / 2.5)
         
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds
@@ -20,33 +26,20 @@ final class SecondViewController: UIViewController {
         
         return view
     }()
-    
-    lazy var responderButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.addTarget(self, action: #selector(responderButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
-    lazy var bagelHole: CircleView = {
-        let view = CircleView(diameter: self.view.frame.height / 4.5)
-        view.backgroundColor = self.view.backgroundColor
-        return view
-    }()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .green
-        view.addSubview(bagel)
         view.addSubview(responderButton)
-        view.addSubview(bagelHole)
+        view.addSubview(bagel)
+        
 	}
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        responderButton.frame = bagelHole.frame
+        responderButton.frame = bagel.frame
         bagel.center = view.center
         responderButton.center = view.center
-        bagelHole.center = view.center
     }
     
     @objc func responderButtonTapped() {
