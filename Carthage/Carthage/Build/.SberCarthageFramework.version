@@ -1,0 +1,19 @@
+{
+  "commitish" : "3bc5ac37da5eedf1596a904865549a4128e49596",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "d9a605213a4cc5f13cfc5612ff602fc78a9a04066d6ce91f3b4ab48631188cde",
+      "name" : "SberCarthageFramework",
+      "container" : "SberCarthageFramework.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "9aeb733a6f9bfd2ab595ed962a31970e9e92cadbd5c867358e89a9c54a8c63b4",
+      "name" : "SberCarthageFramework",
+      "container" : "SberCarthageFramework.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
