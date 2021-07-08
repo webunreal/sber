@@ -1,0 +1,11 @@
+//
+//  module.modulemap
+//  SwiftObjC
+//
+//  Created by Nikolai Sokol on 08.07.2021.
+//
+
+module ObjCLib {
+    umbrella header "../ObjCLib/UmbrellaHeader.h"
+    export *
+}
