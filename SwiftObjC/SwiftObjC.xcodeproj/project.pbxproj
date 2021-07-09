@@ -19,6 +19,10 @@
 		607459B52697838E00934145 /* libObjCLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607459AA269782DF00934145 /* libObjCLib.a */; };
 		607459C82697905E00934145 /* AnotherObjCLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 607459C72697905E00934145 /* AnotherObjCLib.m */; };
 		607459C92697905E00934145 /* AnotherObjCLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 607459C62697905E00934145 /* AnotherObjCLib.h */; };
+		60FE735B269843D700CAFEAF /* AnotherObjCLibUmbrellaHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 607459DB269799A200934145 /* AnotherObjCLibUmbrellaHeader.h */; };
+		60FE735C269843D700CAFEAF /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60FE735A2698435000CAFEAF /* module.modulemap */; };
+		60FE735E2698464600CAFEAF /* ObjCLibUmbrellaHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 607459B32697830600934145 /* ObjCLibUmbrellaHeader.h */; };
+		60FE735F2698464600CAFEAF /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60FE735D2698461600CAFEAF /* module.modulemap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 			remoteGlobalIDString = 607459C32697905E00934145;
 			remoteInfo = AnotherObjCLib;
 		};
+		60FE735126983A2C00CAFEAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6074596F26977ED000934145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607459C32697905E00934145;
+			remoteInfo = AnotherObjCLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,10 +68,12 @@
 		};
 		607459A8269782DF00934145 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				60FE735E2698464600CAFEAF /* ObjCLibUmbrellaHeader.h in CopyFiles */,
+				60FE735F2698464600CAFEAF /* module.modulemap in CopyFiles */,
 				607459AF269782DF00934145 /* ObjCLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +84,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				60FE735B269843D700CAFEAF /* AnotherObjCLibUmbrellaHeader.h in CopyFiles */,
+				60FE735C269843D700CAFEAF /* module.modulemap in CopyFiles */,
 				607459C92697905E00934145 /* AnotherObjCLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,15 +106,13 @@
 		607459AA269782DF00934145 /* libObjCLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		607459AC269782DF00934145 /* ObjCLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLib.h; sourceTree = "<group>"; };
 		607459AD269782DF00934145 /* ObjCLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCLib.m; sourceTree = "<group>"; };
-		607459B32697830600934145 /* UmbrellaHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UmbrellaHeader.h; sourceTree = "<group>"; };
-		607459B8269783A400934145 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		607459B92697847900934145 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		607459B32697830600934145 /* ObjCLibUmbrellaHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLibUmbrellaHeader.h; sourceTree = "<group>"; };
 		607459C42697905E00934145 /* libAnotherObjCLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAnotherObjCLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		607459C62697905E00934145 /* AnotherObjCLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherObjCLib.h; sourceTree = "<group>"; };
 		607459C72697905E00934145 /* AnotherObjCLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherObjCLib.m; sourceTree = "<group>"; };
-		607459DB269799A200934145 /* UmbrellaHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UmbrellaHeader.h; sourceTree = "<group>"; };
-		607459DC26979A0100934145 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		607459DD26979AA700934145 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		607459DB269799A200934145 /* AnotherObjCLibUmbrellaHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherObjCLibUmbrellaHeader.h; sourceTree = "<group>"; };
+		60FE735A2698435000CAFEAF /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		60FE735D2698461600CAFEAF /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +181,6 @@
 				6074598326977ED200934145 /* Assets.xcassets */,
 				6074598526977ED200934145 /* LaunchScreen.storyboard */,
 				6074598826977ED200934145 /* Info.plist */,
-				607459B92697847900934145 /* BridgingHeader.h */,
-				607459B8269783A400934145 /* module.modulemap */,
 			);
 			path = SwiftObjC;
 			sourceTree = "<group>";
@@ -178,8 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				6074599426977F6100934145 /* SwiftLib.swift */,
-				607459DC26979A0100934145 /* module.modulemap */,
-				607459DD26979AA700934145 /* BridgingHeader.h */,
 			);
 			path = SwiftLib;
 			sourceTree = "<group>";
@@ -189,7 +198,8 @@
 			children = (
 				607459AC269782DF00934145 /* ObjCLib.h */,
 				607459AD269782DF00934145 /* ObjCLib.m */,
-				607459B32697830600934145 /* UmbrellaHeader.h */,
+				607459B32697830600934145 /* ObjCLibUmbrellaHeader.h */,
+				60FE735D2698461600CAFEAF /* module.modulemap */,
 			);
 			path = ObjCLib;
 			sourceTree = "<group>";
@@ -206,7 +216,8 @@
 			children = (
 				607459C62697905E00934145 /* AnotherObjCLib.h */,
 				607459C72697905E00934145 /* AnotherObjCLib.m */,
-				607459DB269799A200934145 /* UmbrellaHeader.h */,
+				607459DB269799A200934145 /* AnotherObjCLibUmbrellaHeader.h */,
+				60FE735A2698435000CAFEAF /* module.modulemap */,
 			);
 			path = AnotherObjCLib;
 			sourceTree = "<group>";
@@ -263,6 +274,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				60FE735226983A2C00CAFEAF /* PBXTargetDependency */,
 				607459BF26978B2C00934145 /* PBXTargetDependency */,
 			);
 			name = ObjCLib;
@@ -435,6 +447,11 @@
 			target = 607459C32697905E00934145 /* AnotherObjCLib */;
 			targetProxy = 607459D92697992F00934145 /* PBXContainerItemProxy */;
 		};
+		60FE735226983A2C00CAFEAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607459C32697905E00934145 /* AnotherObjCLib */;
+			targetProxy = 60FE735126983A2C00CAFEAF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -580,7 +597,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCV48HS79W;
-				HEADER_SEARCH_PATHS = /Users/webunreal/Documents/Sber/sber/SwiftObjC/include;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SwiftObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,7 +605,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Sokol.SwiftObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftObjC/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,7 +618,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCV48HS79W;
-				HEADER_SEARCH_PATHS = /Users/webunreal/Documents/Sber/sber/SwiftObjC/include;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SwiftObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,7 +626,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikolai-Sokol.SwiftObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftObjC/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,7 +640,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftLib/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -637,7 +654,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = SwiftLib/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,10 +664,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JCV48HS79W;
 				HEADER_SEARCH_PATHS = /Users/webunreal/Documents/Sber/sber/SwiftObjC/include;
-				MODULEMAP_FILE = "";
+				MODULEMAP_FILE = /Users/webunreal/Documents/Sber/sber/SwiftObjC/ObjCLib/module.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -662,10 +679,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JCV48HS79W;
 				HEADER_SEARCH_PATHS = /Users/webunreal/Documents/Sber/sber/SwiftObjC/include;
-				MODULEMAP_FILE = "";
+				MODULEMAP_FILE = /Users/webunreal/Documents/Sber/sber/SwiftObjC/ObjCLib/module.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -677,7 +694,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = JCV48HS79W;
+				MODULEMAP_FILE = /Users/webunreal/Documents/Sber/sber/SwiftObjC/AnotherObjCLib/module.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -689,7 +708,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = JCV48HS79W;
+				MODULEMAP_FILE = /Users/webunreal/Documents/Sber/sber/SwiftObjC/AnotherObjCLib/module.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

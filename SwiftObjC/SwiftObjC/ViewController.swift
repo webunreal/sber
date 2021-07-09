@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import ObjCLib
+import ObjCLib.AnotherObjCLib
 
 // Проект использует библиотеку ObjCLib, которая использует библеотеку SwiftLib, которая использует библеотеку AnotherObjCLib ))
 
