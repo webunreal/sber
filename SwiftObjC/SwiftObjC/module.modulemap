@@ -8,4 +8,8 @@
 module ObjCLib {
     umbrella header "../ObjCLib/UmbrellaHeader.h"
     export *
+    
+    explicit module AnotherObjCLib {
+        header "../AnotherObjCLib/UmbrellaHeader.h"
+    }
 }

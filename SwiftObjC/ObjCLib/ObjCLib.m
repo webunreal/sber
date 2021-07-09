@@ -6,6 +6,7 @@
 //
 
 #import "ObjCLib.h"
+#import <AnotherObjCLib/AnotherObjCLib.h>
 
 @implementation ObjCLib
 

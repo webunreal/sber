@@ -43,6 +43,13 @@
 			remoteGlobalIDString = 607459C32697905E00934145;
 			remoteInfo = AnotherObjCLib;
 		};
+		60D857AD2698641A00A13402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6074596F26977ED000934145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607459C32697905E00934145;
+			remoteInfo = AnotherObjCLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -263,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				60D857AE2698641A00A13402 /* PBXTargetDependency */,
 				607459BF26978B2C00934145 /* PBXTargetDependency */,
 			);
 			name = ObjCLib;
@@ -434,6 +442,11 @@
 			isa = PBXTargetDependency;
 			target = 607459C32697905E00934145 /* AnotherObjCLib */;
 			targetProxy = 607459D92697992F00934145 /* PBXContainerItemProxy */;
+		};
+		60D857AE2698641A00A13402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607459C32697905E00934145 /* AnotherObjCLib */;
+			targetProxy = 60D857AD2698641A00A13402 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
